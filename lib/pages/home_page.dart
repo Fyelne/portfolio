@@ -1,7 +1,12 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:portfolio/constants/colors.dart';
 import 'package:portfolio/constants/size.dart';
+import 'package:portfolio/widgets/contact_section.dart';
+import 'package:portfolio/widgets/custom_text_field.dart';
 import 'package:portfolio/widgets/drawer_mobile.dart';
+import 'package:portfolio/widgets/footer.dart';
 import 'package:portfolio/widgets/header_desktop.dart';
 import 'package:portfolio/widgets/header_mobile.dart';
 import 'package:portfolio/widgets/main_desktop.dart';
@@ -22,6 +27,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
+    // ignore: unused_local_variable
     final screenWidth = screenSize.width;
     // ignore: unused_local_variable
     final screenHeight = screenSize.height;
@@ -80,16 +86,9 @@ class _HomePageState extends State<HomePage> {
               // Projects
               const ProjectSection(),
               // Contact
-              Container(
-                height: 500,
-                width: double.maxFinite,
-                color: Colors.blueGrey,
-              ),
+              const ContactSection(),
               //Footer
-              Container(
-                height: 500,
-                width: double.maxFinite,
-              )
+              const Footer()
             ],
           ));
     });
