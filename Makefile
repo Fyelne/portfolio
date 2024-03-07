@@ -1,8 +1,8 @@
-# Makefile for deploying build\web to Fyelne/portfolio-Webpage.git
+# Makefile for deploying build\web to fyelne.github.io
 
 # Variables
 SOURCE_DIR := build/web
-DEST_REPO := https://github.com/Fyelne/portfolio-Webpage.git
+DEST_REPO := https://github.com/Fyelne/fyelne.github.io.git
 
 .PHONY: deploy
 
@@ -10,12 +10,9 @@ deploy:
 	@echo "Building web..."
 	@flutter build web && \
 	echo "Web build completed." && \
-	echo "Commenting <base href=\"/\"> in index.html..." && \
+	echo "Pushing to $(DEST_REPO)..." && \
 	cd $(SOURCE_DIR) && \
-	sed -i.bak 's|<base href="/">|<!-- <base href="/"> -->|g' index.html && \
-	rm -f index.html.bak && \
-	echo "Deploying to $(DEST_REPO)..." && \
 	git add . && \
-	git commit -m "Automated deployment" && \
+	git commit -m "Automatic website update" && \
 	git push $(DEST_REPO) master && \
 	echo "Deployment complete"

@@ -50,12 +50,22 @@ class ContactSection extends StatelessWidget {
             constraints: const BoxConstraints(maxWidth: 700),
             child: SizedBox(
               width: double.maxFinite,
+              height: 50,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  // TODO: Add send message function
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content:
+                          Text("Send message function is not implemented yet."),
+                    ),
+                  );
+                },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: CustomColor.yellowPrimary,
                     foregroundColor: Colors.white,
-                    textStyle: const TextStyle(fontWeight: FontWeight.bold)),
+                    textStyle: const TextStyle(
+                        fontWeight: FontWeight.bold, fontSize: 16)),
                 child: const Text("Get in touch"),
               ),
             ),
@@ -86,15 +96,6 @@ class ContactSection extends StatelessWidget {
                 },
                 child: Image.asset(
                   "assets/images/linkedin.png",
-                  width: 28,
-                ),
-              ),
-              InkWell(
-                onTap: () {
-                  js.context.callMethod('open', [SnsLinks.instagram]);
-                },
-                child: Image.asset(
-                  "assets/images/instagram.png",
                   width: 28,
                 ),
               ),

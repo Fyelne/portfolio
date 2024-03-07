@@ -52,7 +52,7 @@ class SkillsDesktop extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                         vertical: 12, horizontal: 16),
                     label: Text(skillsItems[i]["title"]),
-                    avatar: Image.asset(skillsItems[i]["img"]),
+                    avatar: Image.asset(skillsItems[i]["img"], width: 26),
                   )
               ],
             ),

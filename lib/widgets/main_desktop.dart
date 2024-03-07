@@ -31,13 +31,22 @@ class MainDesktop extends StatelessWidget {
               const SizedBox(height: 15),
               SizedBox(
                 width: 250,
+                height: 50,
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      // TODO: Add send message function
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          content: Text(
+                              "Send message function is not implemented yet."),
+                        ),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: CustomColor.yellowPrimary,
                         foregroundColor: Colors.white,
-                        textStyle:
-                            const TextStyle(fontWeight: FontWeight.bold)),
+                        textStyle: const TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 16)),
                     child: const Text("Get in touch")),
               )
             ],

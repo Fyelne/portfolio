@@ -18,71 +18,49 @@ class ProjectUtils {
 
 List<ProjectUtils> hobbyProjectUtils = [
   ProjectUtils(
-    image: "assets/projects/1.png",
-    title: "Flutter",
-    description: "A mobile app for hobby projects",
-    androidLink:
-        "https://play.google.com/store/apps/details?id=com.fyelne.hobby_projects",
-    iosLink: "https://apps.apple.com/us/app/hobby-projects/id1581230453",
+    image: "assets/projects/portfolio.png",
+    title: "Portfolio",
+    description: "Hey, it's this website!",
+    webLink: "https://github.com/Fyelne/portfolio",
   ),
   ProjectUtils(
-    image: "assets/projects/02.png",
-    title: "Flutter",
-    description: "A mobile app for hobby projects",
-    androidLink:
-        "https://play.google.com/store/apps/details?id=com.fyelne.hobby_projects",
+    image: "assets/projects/placeholder.png",
+    title: "EchoWord",
+    description: "An OCR translator app for comic books",
+    webLink: "https://fyelne.github.io",
   ),
   ProjectUtils(
-    image: "assets/projects/03.png",
-    title: "Flutter",
-    description: "A mobile app for hobby projects",
-    iosLink: "https://apps.apple.com/us/app/hobby-projects/id1581230453",
+    image: "assets/projects/placeholder.png",
+    title: "Background Music",
+    description: "Hey, it's this website!",
+    webLink: "https://github.com/Fyelne/BackgroundMusic",
   ),
   ProjectUtils(
-    image: "assets/projects/04.png",
-    title: "Flutter",
-    description: "A mobile app for hobby projects",
-    webLink: "https://www.fyelne.com",
-  ),
-  ProjectUtils(
-    image: "assets/projects/05.png",
-    title: "Flutter",
-    description: "A mobile app for hobby projects",
-    androidLink:
-        "https://play.google.com/store/apps/details?id=com.fyelne.hobby_projects",
-    iosLink: "https://apps.apple.com/us/app/hobby-projects/id1581230453",
-  ),
-  ProjectUtils(
-    image: "assets/projects/06.png",
-    title: "Flutter",
-    description: "A mobile app for hobby projects",
-    androidLink:
-        "https://play.google.com/store/apps/details?id=com.fyelne.hobby_projects",
-    iosLink: "https://apps.apple.com/us/app/hobby-projects/id1581230453",
+    image: "assets/projects/stards.png",
+    title: "Stards",
+    description: "A profile viewer for Hypixel Minecraft server",
+    webLink: "https://github.com/Fyelne/Stards",
   ),
 ];
 
 List<ProjectUtils> workProjectUtils = [
   ProjectUtils(
-    image: "assets/projects/w01.png",
-    title: "Flutter",
-    description: "A mobile app for work projects",
-    androidLink:
-        "https://play.google.com/store/apps/details?id=com.fyelne.work_projects",
-    iosLink: "https://apps.apple.com/us/app/work-projects/id1581230453",
-    webLink: "https://www.fyelne.com",
+    image: "assets/projects/placeholder.png",
+    title: "Battleships",
+    description: "A battleships game in local network using C++",
+    webLink: "https://github.com/Fyelne/BattleShip",
   ),
   ProjectUtils(
-    image: "assets/projects/w02.png",
-    title: "Flutter",
-    description: "A mobile app for work projects",
-    androidLink:
-        "https://play.google.com/store/apps/details?id=com.fyelne.work_projects",
+    image: "assets/projects/traffic.png",
+    title: "Trafic Detection AI",
+    description: "A simple traffic detection AI using YOLOv8",
+    webLink: "https://github.com/Fyelne/Traffic-Detection",
   ),
   ProjectUtils(
-    image: "assets/projects/w03.jpeg",
-    title: "Flutter",
-    description: "A mobile app for work projects",
-    iosLink: "https://apps.apple.com/us/app/work-projects/id1581230453",
-  )
+    image: "assets/projects/weather.png",
+    title: "Weather App",
+    // Weather app is a simple weather app using OpenWeatherMap API
+    description: "A simple weather app using OpenWeatherMap API",
+    webLink: "https://github.com/Fyelne/Weather-App",
+  ),
 ];
